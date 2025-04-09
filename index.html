@@ -29,11 +29,12 @@
       text-decoration: none;
       margin: 0 20px;
       font-weight: bold;
+      color: white;
     }
 
     section {
-      min-height: 120vh; 
-      padding: 100px 40px 60px;
+      min-height: 100vh;
+      padding: 80px 10%;
       color: #333;
       box-sizing: border-box;
       display: flow-root;
@@ -53,23 +54,15 @@
     }
 
     .landing img {
-      width: 90%;
-      max-width: 800px;
+      width: 100%;
+      max-width: 1000px;
       height: auto;
       margin-top: 30px;
       border-radius: 10px;
     }
 
-    .early-life {
-      background-color: #e4dcd4;
-    }
-
-    .nba-career {
-      background-color: #dbe9ee;
-    }
-
-    .legacy {
-      background-color: #e6f0e9;
+    .early-life, .nba-career, .legacy {
+      background-color: #ffffff;
     }
 
     .section-header {
@@ -79,48 +72,46 @@
       border-radius: 12px;
       text-align: center;
       font-family: 'Georgia', serif;
-      font-size: 1.8em;
+      font-size: 2em;
       font-weight: bold;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       margin-bottom: 40px;
     }
 
-    .section-img {
-      float: right;
-      margin-left: 20px;
-      width: 300px;
+    .section-img, .image-column img {
+      width: 100%;
+      max-width: 600px;
       height: auto;
       border-radius: 10px;
+      margin: 20px 0;
+      display: block;
     }
 
     .image-column {
-      float: left;
-      width: 300px;
-      margin-right: 30px;
-    }
-
-    .image-column img {
       width: 100%;
+      max-width: 620px;
+      margin: 0 auto 40px;
+    }
+
+    .text-block {
+      background-color: #ffffff;
+      padding: 30px;
       border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      margin-bottom: 15px;
-      color: #222;
-    }
-
-    p {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      max-width: 900px;
+      margin: 0 auto;
       line-height: 1.8;
-      font-size: 1.1em;
+      font-size: 1.15em;
     }
 
     table {
-      margin-top: 50px;
+      margin: 50px auto;
       font-size: 1.1em;
       border: 2px solid #333;
       border-collapse: collapse;
-      width: 100%;
+      width: 90%;
+      max-width: 900px;
+      background-color: #fff;
     }
 
     th, td {
@@ -159,26 +150,13 @@
       color: #ccc;
     }
 
-    a:link {
-      color: white;
-    }
-
-    a:visited {
-      color: lightgray;
-    }
-
-    a:active {
-      color: orange;
-    }
-
-    nav a:hover {
-      color: #f4c20d;
-    }
+    a:link { color: white; }
+    a:visited { color: lightgray; }
+    a:active { color: orange; }
+    nav a:hover { color: #f4c20d; }
   </style>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
   <nav>
     <a href="#landing">Home</a>
     <a href="#early-life">Early Life</a>
@@ -189,50 +167,43 @@
     <a href="https://www.nba.com/player/2544/lebron-james" target="_blank">NBA Profile</a>
   </nav>
 
-  <!-- Landing Section -->
   <section id="landing" class="landing">
     <h1>LePookie James: My Glorious King The GOAT</h1>
     <img src="LeBackshot.jpg" alt="LeBron James main image">
-    <p>Scroll down to explore and enjoy LeBron's legendary journey.</p>
+    <div class="text-block">
+      <p>Scroll down to explore and enjoy LeBron's legendary journey.</p>
+    </div>
   </section>
 
-  <!-- Early Life Section -->
   <section id="early-life" class="early-life">
     <div class="section-header">Early Life &amp; High School</div>
-
     <div class="image-column">
       <img src="LeElephant.jpg" alt="LeBron James as a baby">
       <img src="LeStudent.jpg" alt="Young LeBron in high school">
     </div>
-
-    <p>LeBron Raymone James my Glorious King was born on December 30, 1984, in Akron, Ohio. Funny enough he was born in the same hospital as his fellow NBA rival Steph Chef Look at Curry Man. Lebron was raised by his mother Gloria, he faced many challenges growing up in a single-parent household, moving frequently and living in poverty as well as a rather rough neighbourhood in Akron. His mother Gloria did her best to surround him with positive male role models like his uncle and his lifelong friend and agent Rich Paul. LeBron has never met his father who left him and his mother when he was born, and when asked about this LeBron has always stated that his mother did more than enough. LeBron spent time being homeless and spent days and even weeks living at friends’ houses sleeping on their couches and eating nothing but minute-made Ramen and dempsters white bread. Despite these hardships, his talent on the basketball court began to shine at an early age.
-</p>
+    <div class="text-block">
+       <p>LeBron Raymone James my Glorious King was born on December 30, 1984, in Akron, Ohio. Funny enough he was born in the same hospital as his fellow NBA rival Steph Chef Look at Curry Man. Lebron was raised by his mother Gloria, he faced many challenges growing up in a single-parent household, moving frequently and living in poverty as well as a rather rough neighbourhood in Akron. His mother Gloria did her best to surround him with positive male role models like his uncle and his lifelong friend and agent Rich Paul. LeBron has never met his father who left him and his mother when he was born, and when asked about this LeBron has always stated that his mother did more than enough. LeBron spent time being homeless and spent days and even weeks living at friends’ houses sleeping on their couches and eating nothing but minute-made Ramen and dempsters white bread. Despite these hardships, his talent on the basketball court began to shine at an early age.</p>
 
     <p>By the time he was a teenager, LeBron James was already a national phenomenon. At St. Vincent–St. Mary High School in Akron, Ohio, he led the Fighting Irish basketball team to an incredible 101–6 record over four seasons and won three Ohio state championships in 2000, 2001, and 2003. His combination of size, speed, and basketball IQ was unmatched at the high school level, drawing comparisons to NBA legends before he even graduated. LeBron's performances consistently filled arenas and caught the attention of scouts, fans, and national media outlets most of LeBron high school games were being shown on ESPN and at times they were being viewed more than any college or NBA games. By his junior year, he was such a dominant force that he became the first high school student ever to appear on the cover of Sports Illustrated, with the bold headline proclaiming him “The Chosen One.” all of this pressure on the guy before he was 17, and he exceeded all of these expectations
 
 In addition to his basketball fame, LeBron was also an elite football player. As a wide receiver, he earned All-State honours and was considered one of the top football prospects in Ohio. In his junior year, he caught over 1,000 receiving yards and 15 touchdowns, showcasing NFL-level athleticism. Many experts believed that he could have played professionally in the NFL had he chosen that path. However, after suffering a wrist injury in the summer before his senior year, he decided to focus solely on basketball. Between the two sports and the fact that he was basically surviving on ramen noodles just goes to show that LePookie is the greatest athlete to ever walk this earth. 
 </p>
+    </div>
   </section>
 
-  <!-- NBA Career Section -->
   <section id="nba-career" class="nba-career">
     <div class="section-header">NBA Career</div>
-
-    <img src="LeDunk.jpg" alt="LeBron in NBA career" class="section-img" style="margin-bottom: 30px; margin-top: 10px;">
-
-    <p>LeBron James entered the NBA in 2003 as the #1 overall pick by the Cleveland Cavaliers (his home town team), carrying the weight of massive expectations as the most anticipated high school athlete ever surpassing the late great Kareem Abdul Jabar. Since then, he has not only lived up to the hype, he has far surpassed it, crafting the most iconic, influential, and decorated careers in basketball history. Yes You heard me correctly Jordan Fans THE GREATEST we done with the 90’s. Over the course of more than two decades, LeBron has played for the Cleveland Cavaliers, Miami Heat, and Los Angeles Lakers, impacting each franchise in monumental ways. He is a four-time NBA champion (2012, 2013, 2016, 2020) playing against two of the greatest dynasties basketball has ever seen in the spurs and warriors, a four-time league MVP (2009, 2010, 2012, 2013), and has made 20 consecutive All-Star appearances which is an all-time record.
+    <img src="LeDunk.jpg" alt="LeBron dunking" class="section-img">
+    <div class="text-block">
+   <p>LeBron James entered the NBA in 2003 as the #1 overall pick by the Cleveland Cavaliers (his home town team), carrying the weight of massive expectations as the most anticipated high school athlete ever surpassing the late great Kareem Abdul Jabar. Since then, he has not only lived up to the hype, he has far surpassed it, crafting the most iconic, influential, and decorated careers in basketball history. Yes You heard me correctly Jordan Fans THE GREATEST we done with the 90’s. Over the course of more than two decades, LeBron has played for the Cleveland Cavaliers, Miami Heat, and Los Angeles Lakers, impacting each franchise in monumental ways. He is a four-time NBA champion (2012, 2013, 2016, 2020) playing against two of the greatest dynasties basketball has ever seen in the spurs and warriors, a four-time league MVP (2009, 2010, 2012, 2013), and has made 20 consecutive All-Star appearances which is an all-time record.
 
 As of 2023, LeBron became the NBA’s all-time leading scorer, surpassing Kareem Abdul-Jabbar's long-standing record with over 39,000 career points which was thought to be an untouchable mark along with Gretskys point record, a testament not only to his elite scoring ability but also his extraordinary longevity and consistency. Yet LeBron is far more than just a scorer. He ranks among the top in all-time assists and rebounds as well, proving his rare versatility as a player who can dominate in every aspect of the game. Whether running the offense as a point forward, guarding multiple positions on defense, or delivering in clutch moments (yes jordan fans he is clutch, you too skip bayless), LeBron has continuously redefined what it means to be a complete basketball player.
 
 His 2016 NBA Finals performance, leading the Cavaliers back from a 3–1 series deficit against a 73-win Golden State Warriors team, remains the greatest individual feat in sports history. LeBron led both teams in points, rebounds, assists, steals, and blocks for the series, becoming the first player ever to do so in a Finals. “BLOCKED BY JAMES” will go down as the most iconic line in commentary history and echoes the spines of salty warriors fans for eternity. Off the court, he has also been a leader and role model, using his platform to speak out on social justice, open the “I PROMISE School” for at-risk youth in his hometown of Akron, and set an example of professionalism and purpose.
 
-What makes LeBron's case as the greatest player of all time so compelling isn't just the stats or the rings, it’s the totality of his impact. He has dominated in multiple eras, adapted his game as he aged, and raised the standard for what greatness looks like on and off the court. Few athletes in any sport have sustained such a high level of excellence for so long. In terms of talent, skill, basketball IQ, durability, leadership, and influence, LeBron James stands in a category entirely of his own.
-
-</p>
-    
-
-
-    <table>
+What makes LeBron's case as the greatest player of all time so compelling isn't just the stats or the rings, it’s the totality of his impact. He has dominated in multiple eras, adapted his game as he aged, and raised the standard for what greatness looks like on and off the court. Few athletes in any sport have sustained such a high level of excellence for so long. In terms of talent, skill, basketball IQ, durability, leadership, and influence, LeBron James stands in a category entirely of his own.</p>
+    </div>
+      <table>
       <thead>
         <tr>
           <th>Accolade</th>
@@ -283,14 +254,11 @@ What makes LeBron's case as the greatest player of all time so compelling isn't 
       </tbody>
     </table>
   </section>
-
-  <!-- Legacy Section -->
   <section id="legacy" class="legacy">
     <div class="section-header">Legacy &amp; Impact</div>
-
-    <img src="LeChalk.jpeg" alt="LeBron's legacy image" class="section-img" style="margin-top: 10px; margin-bottom: 30px;">
-
-    <p>LeBron James' legacy transcends basketball in every sense of the word. While his on-court accomplishments are historic, his off-court influence is just as extraordinary. As a philanthropist, activist, entrepreneur, and devoted family man, LeBron has used his platform to uplift others, challenge injustice, and inspire the next generation. One of his most impactful contributions is the creation of the I PROMISE School in his hometown of Akron, Ohio, a public school for at-risk youth that provides not only education, but wraparound services like free meals, transportation, and college tuition for graduates. It’s a groundbreaking effort that redefines what athlete-led community engagement can look like.
+    <img src="LeChalk.jpeg" alt="LeBron legacy image" class="section-img">
+    <div class="text-block">
+  <p>LeBron James' legacy transcends basketball in every sense of the word. While his on-court accomplishments are historic, his off-court influence is just as extraordinary. As a philanthropist, activist, entrepreneur, and devoted family man, LeBron has used his platform to uplift others, challenge injustice, and inspire the next generation. One of his most impactful contributions is the creation of the I PROMISE School in his hometown of Akron, Ohio, a public school for at-risk youth that provides not only education, but wraparound services like free meals, transportation, and college tuition for graduates. It’s a groundbreaking effort that redefines what athlete-led community engagement can look like.
 
 LeBron has also been a powerful voice for social change. From speaking out on racial injustice and police brutality to promoting voter registration and education equality, he has never shied away from using his influence for good. He co-founded More Than A Vote, a campaign aimed at combating voter suppression, and has been a consistent advocate for marginalized communities.
 
@@ -302,16 +270,14 @@ LeBron James will undoubtedly go down as one of the greatest athletes in history
 
 I love you Lebron
 </p>
-
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Lucas Sauer. All rights reserved to my Pookie LeBonBon.</p>
     <p>Made with ❤️ for GBDA228 Final Project</p>
   </footer>
 
-  <!-- Fade-In Scroll Script -->
   <script>
     const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver((entries) => {
@@ -323,6 +289,5 @@ I love you Lebron
     }, { threshold: 0.2 });
     sections.forEach(section => observer.observe(section));
   </script>
-
 </body>
 </html>
